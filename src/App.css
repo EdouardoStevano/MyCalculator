@@ -1,0 +1,149 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #040315;
+  font-family: Poppins, sans-serif;
+  /* background-image: url('../src/assets/EDS_point.png'); */
+}
+
+.calculator-container{
+  display: flex;
+  align-items: center;
+  background-image: url('../src/assets/EDS_point.png');
+  justify-content: center;
+}
+
+.calculator {
+  width: 300px;
+  z-index: 5;
+  margin: 110px 20px;
+  /* border: 1px solid red; */
+  background-color: #0a082369;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  height: 75px;
+  background-color: #0302199a;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  color: #fff;
+  display: flex;
+  overflow-x: auto;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 24px;
+}
+
+.display button{
+  margin-left: 13px;
+  font-size: 12px;
+}
+
+.history .btn-history{
+  margin-top: 30px;
+  position: relative;
+  top: -16px;
+  left: 0px;
+  background-color: #0a0823;
+}
+
+.history button{
+  margin-left: 13px;
+  font-size: 12px;
+}
+
+.history{
+  color: #fff;
+  padding: 30px;
+  width: 400px;
+  background-color: #0a082369;
+  border-radius: 15px;
+  height: 445px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.history h3{
+  font-size: 14px;
+  background-color: #0a0823;
+}
+
+.history small{
+  font-size: 12px;
+  background-color: #0a0823;
+}
+
+.history ul{
+  text-decoration: none;
+  background-color: #0a0823;
+  overflow-y: auto;
+  height: 70%;
+}
+
+.history ul li{
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 12px;
+  background-color: #0a0823;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+  background-color: transparent;
+}
+
+.buttons button{
+  /* box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1); */
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #1b1943;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s ease;
+}
+
+button:hover {
+  background-color: #1f93ff;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #d5d5d5;
+}
+
+/*windown scroll*/
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: #1f93ff;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-corner {
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar {
+  padding: 20px 0px;
+  background: #1b1943;
+  width: 6px;
+  height: 6px;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar:hover,
+*::-webkit-scrollbar:hover {
+  background: #1b1943;
+}
